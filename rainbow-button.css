@@ -1,0 +1,31 @@
+@keyframes rainbowAnimation {
+    0%{
+        background-color: rgb(214, 70, 70);
+    }
+
+    25%{
+        background-color: rgb(190, 138, 41);
+    }
+
+    50% {
+        background-color: #2f7052;
+    }
+
+    75%{
+        background-color: rgb(43, 50, 148);
+    }
+    100%{
+        background-color: rgb(102, 47, 107);
+    }
+}
+
+button {
+    padding: 2rem 6rem;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 0.5s ease;
+    animation: rainbowAnimation 4s infinite alternate-reverse;
+}
