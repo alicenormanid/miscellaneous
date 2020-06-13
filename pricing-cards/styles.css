@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /* Creates four columns of equal widths */
@@ -21,7 +21,7 @@ body {
 /*Plan benefits list styling */
 .card {
   list-style-type: none;
-  border: 1px solid #eee;
+  border: 2px solid #eee;
   margin: 0;
   padding: 0;
   -webkit-transition: 0.3s;
@@ -87,7 +87,13 @@ body {
 }
 
 /*Mobile responsiveness: makes columns take up whole screen*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 820px) {
+  .columns {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .columns {
     width: 100%;
   }
