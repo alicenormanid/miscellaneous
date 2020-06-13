@@ -1,52 +1,95 @@
-/* BENEFITS SECTION */
-.cards-head {
-    background: rgb(106, 106, 207);
-    min-height: 20vh;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.cards-head h3 {
-    padding: 1rem;
+html {
+  font-size: 62.5%;
 }
 
-.cards {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    min-height: 80vh;
-    align-items: center;
-    flex-wrap: wrap;
+body {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* Creates four columns of equal widths */
+.columns {
+  float: left;
+  width: 25%;
+  padding: 1rem;
+}
+
+/*Plan benefits list styling */
 .card {
-    flex: 1 1 25rem;
-    min-height: 70vh;
-    margin: 2rem 5rem; 
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1); /* x y blur color */
-    text-align: center;
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.cards img {
-    max-width: 15%;
-    margin: 2rem;
+.card:hover {
+  -webkit-box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.3);
 }
 
-.card-icon{
-    max-width: 15%;
-    margin: 2rem;
+.card .card-header {
+  background-color: #6cb383;
+  color: white;
+  font-size: 2.5rem;
 }
 
-.card h4, .card p {
-    padding: 1rem;
-    margin: 1rem 3rem;
+.card li {
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
-.card-icon {
-    background: rgb(134, 211, 134);
+.card .price {
+  color: white;
+  font-size: 3rem;
 }
+
+.card .button {
+  background-color: #6cb383;
+  border: none;
+  color: white;
+  padding: 1rem 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 0.8rem;
+}
+
+/*Different colring for the different cards*/
+#card1 .card-header,
+#card1 .price,
+#card1 .button {
+  background-color: #3396cf;
+}
+
+#card2 .card-header,
+#card2 .price,
+#card2 .button {
+  background-color: #00a4a0;
+}
+
+#card3 .card-header,
+#card3 .price,
+#card3 .button {
+  background-color: #a65279;
+}
+
+#card4 .card-header,
+#card4 .price,
+#card4 .button {
+  background-color: #db962e;
+}
+
+/*Mobile responsiveness: makes columns take up whole screen*/
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

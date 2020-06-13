@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Creates four columns of equal widths */
+.columns {
+  float: left;
+  width: 25%;
+  padding: 1rem;
+}
+
+/*Plan benefits list styling */
+.card {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-header {
+    background-color: #6cb383;
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  li {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .price {
+    color: white;
+    font-size: 3rem;
+  }
+  .button {
+    background-color: #6cb383;
+    border: none;
+    color: white;
+    padding: 1rem 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 0.8rem;
+  }
+}
+
+/*Different colring for the different cards*/
+
+#card1 {
+  .card-header,
+  .price,
+  .button {
+    background-color: #3396cf;
+  }
+}
+
+#card2 {
+  .card-header,
+  .price,
+  .button {
+    background-color: #00a4a0;
+  }
+}
+
+#card3 {
+  .card-header,
+  .price,
+  .button {
+    background-color: #a65279;
+  }
+}
+
+#card4 {
+  .card-header,
+  .price,
+  .button {
+    background-color: #db962e;
+  }
+}
+
+/*Mobile responsiveness: makes columns take up whole screen*/
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
