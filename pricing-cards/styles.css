@@ -1,13 +1,8 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
+#pricing-page {
   font-size: 62.5%;
 }
 
-body {
+#pricing-body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -16,6 +11,8 @@ body {
   float: left;
   width: 25%;
   padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*Plan benefits list styling */
@@ -26,6 +23,8 @@ body {
   padding: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .card:hover {
